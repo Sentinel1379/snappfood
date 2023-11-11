@@ -1,0 +1,253 @@
+.header-img {
+    position: absolute;
+    top: 9.375rem;
+    left: 0;
+    width: 45%;
+    height: 85%;
+    margin-top: -4rem;
+}
+
+.header-heading {
+    margin-bottom: 2rem;
+
+    .header-brand {
+
+        & svg {
+
+           @media (max-width: 991.98px) {
+                height: 50px;
+           }
+        }
+    }
+
+    .header-login {
+        z-index: 50;
+
+        .login-btns {
+            margin-right: 1rem;
+            padding: 1rem;
+            cursor: pointer;
+            margin-left: 0.5625rem;
+
+            .login-salesPerdon-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 6.6875rem;
+                width: auto;
+                height: 3rem;
+                border: 0.09375rem solid rgba($color-7, 0.06);
+                border-radius: 0.375rem;
+                color: $color-7;
+                background-color: rgba($color-7, 0.06);
+                background-clip: padding-box;
+                font-family: $font-IRANSansMobile;
+                font-weight: 700;
+                font-size: 1.125rem;
+                transition: all 150ms ease-out 0s;
+            }
+
+            .btn-title {
+                font-family: $font-IRANSansMobile;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+                color: $color-2;
+            }
+
+            .login-customer-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 6.6875rem;
+                width: auto;
+                height: 3rem;
+                border: 0.09375rem solid rgba($color-7, 0.06);
+                border-radius: 0.375rem;
+                color: $color-7;
+                background-color: $color-4;
+                background-clip: padding-box;
+                font-family: $font-IRANSansMobile;
+                font-weight: 700;
+                font-size: 1.125rem;
+                transition: all 150ms ease-out 0s;
+
+                &:hover {
+                    background-color: rgba($color-4, 0.9);
+                    color: $color-7 ;
+                }
+            }
+
+            .login-customer-btn span {
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    .header-title {
+        margin-top: 9.125rem;
+        margin-right: 1rem;
+
+        @media (max-width:991.98px) {
+            margin-top: 2.875rem;
+        }
+
+        .title-float-h1 {
+            font-family: $font-SnapWeb;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 2rem;
+            padding: 0;
+            margin: 0;
+            color: $color-2;
+            height: auto;
+
+            @media (max-width:991.98px) {
+                font-size: 1.5625rem;
+            }
+        }
+
+        .float-part p {
+            font-family: $font-SnapWeb;
+            font-size: 40px;
+            height: 2.75rem;
+            font-weight: 700;
+            line-height: 2rem;
+            color: $color-4;
+            // display: inline;
+            position: absolute;
+            z-index: -10;
+
+            @media (max-width:991.98px) {
+                font-size: 1.5625rem;
+            }
+        }
+
+        .title-main h1,
+        .title-main p {
+            font-size: .875rem;
+            font-weight: 400;
+            line-height: 1.25;
+            padding: 0;
+            margin: 0;
+            color: $color-3;
+        }
+    }
+}
+
+.choose-address {
+    z-index: 60;
+    min-width: 16.875rem;
+    width: 30vw;
+    max-width: 50%;
+    height: 3.5rem;
+    margin-top: 1.75rem;
+    background-color: $color-8;
+    border: 0.0625rem solid rgba($color-2, 0.12);
+    border-radius: 5rem;
+    box-shadow: rgba($color-2, 0.06) 0px 1px 0px, rgba($color-1, 0.2) 0px 4px 16px -8px;
+
+    &-title svg {
+        margin-right: 1.1875rem;
+        fill: #A6AAAD;
+        color: #A6AAAD;
+    }
+
+    &-title p {
+        margin-right: 0.6875rem;
+        font-family: $font-IRANSansMobile;
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 0;
+        color: $color-5;
+    }
+
+    &-btn {
+        margin-left: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: auto;
+        width: 3rem;
+        height: 3rem;
+        border: 0.09375rem solid rgba($color-4, 0.06);
+        border-radius: 50%;
+        color: $color-8;
+        background-color: $color-4;
+        background-clip: padding-box;
+        box-shadow: rgba($color-2, 0.06) 0px 1px 0px, rgba($color-1, 0.2) 0px 4px 16px -8px;
+        font-family: $font-IRANSansMobile;
+        font-size: 1.125rem;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba($color-4, 0.9);
+        }
+    }
+
+    &-btn svg {
+        fill: #FFFFFF;
+    }
+}
+
+.foods {
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 0px 0.5rem;
+    border-radius: 1.5rem;
+    background-color: rgba($color-8, 0.6);
+    backdrop-filter: blur(2.5rem);
+
+    @media (max-width:991.98px) {
+        margin-top: 10rem;
+    }
+
+
+    .food-item {
+        background-color: transparent;
+        min-width: 5.5rem;
+
+        .food-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .food-name {
+            font-family: $font-IRANSansMobile;
+            font-size: .75rem;
+            font-weight: 400;
+            line-height: 1;
+            padding: 0;
+            margin: 0;
+            color: $color-3;
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba($color-5, 0.8);
+    border-radius: 5rem;
+    border: 3.3px solid #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($color-4, 0.7);
+}
